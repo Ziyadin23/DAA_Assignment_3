@@ -12,8 +12,6 @@ The assignment has three tasks:
 2. Directed connectivity using topological ordering and strongly connected components.
 3. Shortest paths using Dijkstra's algorithm.
 
-Development follows [the daily plan](PLAN.md). Actual completed work and verification are recorded in [the progress log](PROGRESS.md).
-
 ## Build and run
 
 Requirements: a **JDK 17 or newer** and **Bash**. There are no external Java dependencies; Maven and Gradle are not required.
@@ -30,7 +28,7 @@ The current demo prints a four-district undirected network. Algorithm demonstrat
 
 ## Implementation
 
-The graph foundation is implemented. Remaining algorithms will be added on their scheduled days.
+The graph foundation is implemented. The algorithm implementations are in progress.
 
 ```text
 src/
@@ -59,7 +57,7 @@ DSU, Kruskal, Prim, SCC, topological ordering, and Dijkstra analyses will be add
 
 ## Experimental Setup
 
-Benchmarks are scheduled for 29 October. They will use a documented fixed random seed and these configurations:
+Benchmarks will use a documented fixed random seed and these configurations:
 
 | Graph | Vertices | Edges |
 | --- | ---: | ---: |
@@ -81,7 +79,7 @@ Performance comparisons and interpretation will follow the measured results. The
 
 Run `bash scripts/test.sh`. It compiles the source and test classes, then runs each `*Test.java` entry point with Java assertions enabled (`-ea`). A compilation error or failed assertion stops the script with a nonzero exit status. The test runner uses only the JDK, keeping checks reproducible without downloading a testing framework.
 
-Graph tests cover directed edges, symmetric undirected connections, isolated and single vertices, an empty graph, parallel edges, duplicate weights, self-loops, negative weights, invalid endpoints, and collection access. Algorithm correctness tests will be added with each daily milestone.
+Graph tests cover directed edges, symmetric undirected connections, isolated and single vertices, an empty graph, parallel edges, duplicate weights, self-loops, negative weights, invalid endpoints, and collection access. Algorithm correctness tests will be added alongside their implementations.
 
 ## Conclusion
 
